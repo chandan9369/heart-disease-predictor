@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Predictor</title>
+    <!-- awesome icon link -->
+    <script src="https://kit.fontawesome.com/32d14e66b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-menu">
+                <div class="heart">
+                    <a href="/" class="home-link">Home</a>
+                </div>
+                <nav class="header-nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-link-item">
+                            <a href="#doc">Get Started</a>
+                        </li>
+                        <li class="nav-link-item">
+                            <a href="/predict">Predictor</a>
+                        </li>
+                        <li class="nav-link-item">
+                            <a href="#faq">FAQs</a>
+                        </li>
+                    </ul>
+                </nav>
+                <picture class="menu-icon">
+                    <i id="menu" class="fa-solid fa-bars"></i>
+                </picture>
+            </div>
+            <section class="hero">
+                <div class="hero-main">
+                    <div class="hero-text">
+                        <h1 class="hero-title">A Simple Heart Disease Predictor App</h1>
+                        <p class="hero-subtitle">
+                            Welcome to the Heart Disease Predictor App. Our app helps you assess your
+                            risk of heart disease by analyzing various factors such as age, gender,
+                            blood pressure, cholesterol levels, and lifestyle habits. With just a few
+                            simple inputs, you can gain valuable insights into your cardiovascular
+                            health and take proactive steps towards a healthier lifestyle.
+                        </p>
+                    </div>
+                    <div class="hero-btn-menu">
+                        <a href="/predict" class="btn hero-btn btn-blue">Predict</a>
+                        <a href="#doc" class="btn hero-btn btn-gray">Get Started</a>
+                    </div>
+                </div>
+                <picture class="hero-illustration">
+                    <img src="static/heart_hero.png" alt="" class="illustration" />
+                </picture>
+            </section>
+        </header>
+        <!--         main section-->
+        <main class="main">
+            <section id="doc" class="features">
+                <div class="text feature-text">
+                    <h2 class="title">Get Started</h2>
+                    <p class="subtitle doc-subtitle">
+                        In order to make use of this app effectively, there are certain details that
+                        you will need to input. These details are necessary to obtain accurate
+                        information regarding your health status. Examples of the information that you
+                        will need to input include your age, gender, cholestrol level, and any medical
+                        conditions that you may have. Once this information is entered, the app will be
+                        able to provide you with a report on your current health status.
+                    </p>
+                    <ul class="subtitle doc-subtitle doc-item-list">
+                        <li class="item-link">
+                            <p><span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">Age:</span></p> <span>age in years </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">sex:</span> <span>(1 = male; 0 = female) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">cp:</span> <span>chest pain type (4 values) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span>
+                            <span class="item-bold">testbps:</span>
+                            <span>resting blood pressure (in mm Hg on admission to the hospital) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">chol:</span>
+                            <span>serum cholestoral in mg/dl </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">fbs:</span>
+                            <span>fasting blood sugar > 120 mg/dl (1 = true; 0 = false) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">restecg:</span>
+                            <span>resting electrocardiographic results (values 0,1,2) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">thalach:</span>
+                            <span>maximum heart rate achieved </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">exang:</span>
+                            <span>exercise induced angina (1 = yes; 0 = no) </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">oldpeak:</span>
+                            <span>ST depression induced by exercise relative to rest </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">slope:</span>
+                            <span>the slope of the peak exercise ST segment </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">ca:</span>
+                            <span>number of major vessels (0-3) colored by flourosopy </span>
+                        </li>
+                        <li class="item-link">
+                            <span class="arrow-icon"><i class="fa-solid fa-caret-right"></i></span><span class="item-bold">thal:</span>
+                            <span>1 = normal; 2 = fixed defect; 3 = reversable defect </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="faq" class="faq">
+                <div class="text faq-text">
+                    <h2 class="title faq-title">Frequently Asked Questions</h2>
+                    <p class="subtitle">Here are some of our faqs about our Health predictor app.</p>
+                </div>
+                <div class="accordian">
+                    <div class="accordian-item">
+                        <p class="item-ques">
+                            <span class="acc-item-title">
+                                What is the purpose of the Heart Disease Predictor app?</span>
+                            <img class="arrow-icon" src="static/icon-arrow.svg" alt="" />
+                        </p>
+                        <p class="item-answer">
+                            The app is designed to assess the risk of heart disease based on various
+                            factors such as age, gender, blood pressure, cholesterol levels, and
+                            lifestyle habits.
+                        </p>
+                    </div>
+                    <div class="accordian-item">
+                        <p class="item-ques">
+                            <span class="acc-item-title">How accurate is the heart disease prediction provided by the app?</span>
+                            <img class="arrow-icon" src="static/icon-arrow.svg" alt="" />
+                        </p>
+                        <p class="item-answer">
+                            The accuracy of the prediction depends on the data provided by the user and
+                            the algorithms used in the app. While we strive for high accuracy, it's
+                            important to remember that the prediction is an estimate and not a
+                            guarantee.
+                        </p>
+                    </div>
+                    <div class="accordian-item">
+                        <p class="item-ques">
+                            <span class="acc-item-title">What information do I need to input into the app for a prediction?</span>
+                            <img class="arrow-icon" src="static/icon-arrow.svg" alt="" />
+                        </p>
+                        <p class="item-answer">
+                            The app typically requires information such as age, gender, blood pressure
+                            readings, cholesterol levels, smoking habits, family history of heart
+                            disease, and physical activity levels. For more
+                            <a href="#doc" class="">Link</a>
+                        </p>
+                    </div>
+                    <div class="accordian-item">
+                        <p class="item-ques">
+                            <span class="acc-item-title">Is the app suitable for all age groups?</span>
+                            <img class="arrow-icon" src="static/icon-arrow.svg" alt="" />
+                        </p>
+                        <p class="item-answer">
+                            The app is designed for adults and may not be suitable for children or
+                            adolescents. It's always best to consult with a healthcare professional for
+                            individuals under 18 years of age.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-menu">
+                <div class="heart">
+                    <a href="/" class="home-link footer-logo">Home</a>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-link-item">
+                            <a href="#doc">Get Started</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#predict">Predictor</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#faq">Faq</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li class="footer-social-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="attribution">
+                Designed & Developed by
+                <a href="https://www.frontendmentor.io/profile/chandan9369">Chandan Keshari</a>.
+            </p>
+        </footer>
+        <div class="active-menu">
+            <div class="menu-header">
+                <div class="menu-nav">
+                    <div class="heart">
+                        <a href="/" class="home-link footer-logo">Home</a>
+                    </div>
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </div>
+                <nav class="nav-header">
+                    <ul class="list">
+                        <li class="link-item">
+                            <a href="/predict">Predictor</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="/#doc">Get Started</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="/#faq">Faq</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/static/script.js"></script>
+
+</html>

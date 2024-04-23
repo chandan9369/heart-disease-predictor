@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Predictor</title>
+    <!-- awesome icon link -->
+    <script src="https://kit.fontawesome.com/32d14e66b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-menu">
+                <div class="heart">
+                    <a href="/" class="home-link">Home</a>
+                </div>
+                <nav class="header-nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-link-item">
+                            <a href="/#doc">Get Started</a>
+                        </li>
+                        <li class="nav-link-item">
+                            <a href="/predict">Predictor</a>
+                        </li>
+                        <li class="nav-link-item">
+                            <a href="/#faq">FAQs</a>
+                        </li>
+                    </ul>
+                </nav>
+                <picture class="menu-icon">
+                    <i id="menu" class="fa-solid fa-bars"></i>
+                </picture>
+            </div>
+        </header>
+        <!--         main section-->
+        <main class="main">
+            <section id="predict" class="features">
+                <div class="result text feature-text">
+                    <h2 class="title">Result</h2>
+                    <p class="subtitle">{{ prediction_text }}</p>
+                </div>
+            </section>
+        </main>
+        <div class="active-menu">
+            <div class="menu-header">
+                <div class="menu-nav">
+                    <div class="heart">
+                        <a href="/" class="home-link footer-logo">Home</a>
+                    </div>
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </div>
+                <nav class="nav-header">
+                    <ul class="list">
+                        <li class="link-item">
+                            <a href="/predict">Predictor</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="/#doc">Get Started</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="/#faq">Faq</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/static/script.js"></script>
+
+</html>
