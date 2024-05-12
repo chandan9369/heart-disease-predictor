@@ -6,7 +6,7 @@ import pickle
 app = Flask(__name__)
 
 # loading pickle model
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('trained_model.pkl', 'rb'))
 
 
 @app.route("/")
